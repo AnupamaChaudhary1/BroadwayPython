@@ -59,4 +59,8 @@ sqr=Square(10)
 sqr.area()
         
 
+# in banking class bank acc =accnum and balance ,  3 methods add balance, withdraw_balance(),  show _balance()
+#current acc and saving acc,  =classes  , also interest rate,   current acc=overdraft limit withdraw not allowed
+#in saving allowed
+
 
