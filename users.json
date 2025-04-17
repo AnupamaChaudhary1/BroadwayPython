@@ -1,0 +1,23 @@
+{
+    "Anu": {
+        "id": 1,
+        "username": "Anu",
+        "password": "pass",
+        "pin": "1234",
+        "balance": 1000
+    },
+    "Aaa": {
+        "id": 2,
+        "username": "Aaa",
+        "password": "password",
+        "pin": "4321",
+        "balance": 500
+    },
+    "Anupama": {
+        "id": 3,
+        "username": "Anupama",
+        "password": "annn",
+        "pin": "2000",
+        "balance": 0
+    }
+}
