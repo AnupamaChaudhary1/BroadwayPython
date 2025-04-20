@@ -35,7 +35,7 @@
 # # class Dog(Animal,Mammal):    
 # #     def bark(self):
 # #         print('Dog barks')
-# class Dog(Mammal,Animal):    #  inheritancce left is given more priority,  MRO=method resolution order
+# class Dog(Mammal,Animal):    #  in inheritancce left is given more priority,  MRO=method resolution order
 #     def bark(self):
 #         print('Dog barks')
 # d=Dog()
@@ -59,8 +59,6 @@ sqr=Square(10)
 sqr.area()
         
 
-# in banking class bank acc =accnum and balance ,  3 methods add balance, withdraw_balance(),  show _balance()
-#current acc and saving acc,  =classes  , also interest rate,   current acc=overdraft limit withdraw not allowed
-#in saving allowed
+
 
 
