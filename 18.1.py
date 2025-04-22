@@ -4,6 +4,7 @@
 # # Check if both vectors have the same length
 # if len(vector1) != len(vector2):
 #     print("Error: Vectors must be of the same length.")
+
 # Define the vectors
 # v1 = [1, 2, 0]
 # v2 = [4, 5, 22]
