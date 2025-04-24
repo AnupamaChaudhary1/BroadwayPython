@@ -48,10 +48,10 @@
 
 #user declared module
 #we cam also import the built in function =module function, varialble , list files /....
-from calc import sum, diff,var   #imported form calc.py
-print(var)
-print(sum(3,5))
-print(diff(6,3))
+# from calc import sum, diff,var   #imported form calc.py
+# print(var)
+# print(sum(3,5))
+# print(diff(6,3))
 
 
 # 3rd party modules like pandas(pip helps to install=pip install pandas in system)
@@ -59,5 +59,40 @@ print(diff(6,3))
 
 
 #random number algorithms 
+def simple_lcg(seed):
+    a = 9
+    c = 3
+    m = 2**3
+    seed = (a * seed + c) % m
+    return seed
+
+seed = 4  # Initial seed
+
+for i in range(1,3):
+    x=int(input('enter the number between 1 to 10 of your choice: '))
+    seed = simple_lcg(seed)
+    random_int = 1 + (seed % 10)  # Random integer in [1, 10]
+    if x==random_int:  #[1,10]:
+      print('the number matched')
+      break
+    elif x>random_int:  #[1,10]:
+       print('incorrect')
+       print(f'number of attempts left: {3-i}')
+    
+    elif x<random_int:  #[1,10]:
+       print('incorrect')
+       print(f'number of attempts left: {3-i}')
+else:
+   print('Numbers do not match. out of attempt!')
+   
+print("Correct is Random Integer:", random_int)
+
+
+
+
+
+
+
+
 
 
