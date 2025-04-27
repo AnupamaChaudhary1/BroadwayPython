@@ -25,18 +25,50 @@
 
 #numpy =work with array
 #Seaborn= better for statistical plots,    simplified and builtin type
+# import seaborn as sns
+# import matplotlib.pyplot as plt
+# import pandas as pd
+# import numpy as np
+
+# data=np.random.rand(6,5)    #5 is for columns and 6 is range/rows
+# df=pd.DataFrame(data, columns= ['A','B','C','D','E'])
+# sns.heatmap(df)  #,cmap='coolwarm'
+# plt.show()
+
+
+#boxplot 
+# import seaborn as sns
+# import matplotlib.pyplot as plt
+# import pandas as pd
+# # Sample dataset
+# data = {
+#     'Category': ['A', 'A', 'A', 'B', 'B', 'B', 'C', 'C', 'C'],   #
+#     'Value': [10, 12, 14, 20, 22, 19, 30, 28, 33]
+# }
+# df = pd.DataFrame(data)
+# # Use pointplot to show just median lines
+# sns.pointplot(y='Category', x='Value',estimator='median', data=df, join=False)  # estimator='median',
+# plt.title('Median per Category')
+# plt.show()
+
+
+#pairplot =using seaborn
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
-
-data=np.random.rand(6,5)    #5 is for columns and 6 is range/rows
-df=pd.DataFrame(data, columns= ['A','B','C','D','E'])
-sns.heatmap(df)  #,cmap='coolwarm'
+# Sample data
+data = {
+    'a': [4, 8, 3, 8],
+    'b': [5, 4, 3, 2],
+    'c': [3, 4, 2, 5],
+    'd': [8, 7, 6, 1],
+    'category': ['a','b','c', 'd']
+}
+df = pd.DataFrame(data)
+sns.pairplot(df, plot_kws={'s': 0})  #, hue='category'
 plt.show()
 
-#boxplot 
-#pairplot =using seaborn
 
 
 
